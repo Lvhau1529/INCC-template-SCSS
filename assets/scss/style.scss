@@ -1,3 +1,5 @@
+@import "../vendors/bootstrap/bootstrap.scss"; //bootstrap framework
+
 html {
   font-family: "MarkWebPro", -apple-system, BlinkMacSystemFont, "Helvetica",
     "Roboto", "Noto", "Ubuntu", sans-serif;
@@ -17,4 +19,5 @@ html {
   }
 }
 
-@import "../vendors/bootstrap/bootstrap.scss"; //bootstrap framework
+
+//@import "../vendors/bourbon/bourbon";

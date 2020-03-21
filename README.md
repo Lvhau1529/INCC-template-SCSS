@@ -1,0 +1,1 @@
+# INCC-template-SCSS

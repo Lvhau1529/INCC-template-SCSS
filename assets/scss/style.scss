@@ -10,7 +10,7 @@
   color: #000;
   &:hover {
     color: #000;
-    background-color: #F1F1F1;
+    background-color: #f1f1f1;
   }
 }
 
@@ -21,6 +21,7 @@ html {
   box-sizing: border-box;
   color: #000;
   margin: 0;
+  padding: 0;
 }
 
 /*End-Header*/
@@ -34,15 +35,18 @@ html {
     }
     .hero-banner-paragraph {
       &__content {
-        padding: 30px 10px;
-        position: static;
+        padding: 20px 10px 50px 10px;
+        max-width: 420px;
         .title {
           h2 {
             font-size: 2.2em;
             font-weight: 700;
           }
+          p {
+            padding-top: 10px;
+          }
           .button {
-            padding-top: 20px;
+            padding-top: 35px;
             a {
               @include button;
             }
@@ -53,7 +57,58 @@ html {
   }
 }
 
-@media only screen and (max-width: 576px) {
+/*End Hero-banner*/
+.tiles {
+  .tiles-block {
+    .tiles-grid-12 {
+      .tiles-grid-6 {
+        padding: 0;
+
+        &__left {
+          background: {
+            image: url(../../images/sample/image2.png);
+            repeat: no-repeat;
+            position: center center;
+            size: cover;
+          }
+
+          .content {
+            h3 {
+              margin: 0;
+              font-weight: 300;
+              font-size: 1.8em;
+            }
+            .button {
+              a {
+                @include button;
+              }
+            }
+          }
+        }
+
+        &__right {
+          background: {
+            image: url(../../images/sample/image3.png);
+            repeat: no-repeat;
+            position: center center;
+            size: cover;
+          }
+          .content {
+            h3 {
+              margin: 0;
+              font-weight: 300;
+              font-size: 1.8em;
+            }
+            .button {
+              a {
+                @include button;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 //@import "../vendors/bourbon/bourbon";

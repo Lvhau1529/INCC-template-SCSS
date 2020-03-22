@@ -5787,7 +5787,8 @@ html {
   font-size: 16px;
   box-sizing: border-box;
   color: #000;
-  margin: 0; }
+  margin: 0;
+  padding: 0; }
 
 /*End-Header*/
 .hero-banner .hero-banner-image {
@@ -5796,13 +5797,15 @@ html {
   background-position: center center;
   background-size: cover; }
   .hero-banner .hero-banner-image .hero-banner-paragraph__content {
-    padding: 30px 10px;
-    position: static; }
+    padding: 20px 10px 50px 10px;
+    max-width: 420px; }
     .hero-banner .hero-banner-image .hero-banner-paragraph__content .title h2 {
       font-size: 2.2em;
       font-weight: 700; }
+    .hero-banner .hero-banner-image .hero-banner-paragraph__content .title p {
+      padding-top: 10px; }
     .hero-banner .hero-banner-image .hero-banner-paragraph__content .title .button {
-      padding-top: 20px; }
+      padding-top: 35px; }
       .hero-banner .hero-banner-image .hero-banner-paragraph__content .title .button a {
         font-size: 13px;
         font-weight: 700;
@@ -5813,6 +5816,50 @@ html {
         color: #000; }
         .hero-banner .hero-banner-image .hero-banner-paragraph__content .title .button a:hover {
           color: #000;
-          background-color: #F1F1F1; }
+          background-color: #f1f1f1; }
+
+/*End Hero-banner*/
+.tiles .tiles-block .tiles-grid-12 .tiles-grid-6 {
+  padding: 0; }
+  .tiles .tiles-block .tiles-grid-12 .tiles-grid-6__left {
+    background-image: url(../../images/sample/image2.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+    .tiles .tiles-block .tiles-grid-12 .tiles-grid-6__left .content h3 {
+      margin: 0;
+      font-weight: 300;
+      font-size: 1.8em; }
+    .tiles .tiles-block .tiles-grid-12 .tiles-grid-6__left .content .button a {
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1;
+      padding: 19px 33px 18px;
+      text-decoration: none;
+      background-color: #fff;
+      color: #000; }
+      .tiles .tiles-block .tiles-grid-12 .tiles-grid-6__left .content .button a:hover {
+        color: #000;
+        background-color: #f1f1f1; }
+  .tiles .tiles-block .tiles-grid-12 .tiles-grid-6__right {
+    background-image: url(../../images/sample/image3.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+    .tiles .tiles-block .tiles-grid-12 .tiles-grid-6__right .content h3 {
+      margin: 0;
+      font-weight: 300;
+      font-size: 1.8em; }
+    .tiles .tiles-block .tiles-grid-12 .tiles-grid-6__right .content .button a {
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1;
+      padding: 19px 33px 18px;
+      text-decoration: none;
+      background-color: #fff;
+      color: #000; }
+      .tiles .tiles-block .tiles-grid-12 .tiles-grid-6__right .content .button a:hover {
+        color: #000;
+        background-color: #f1f1f1; }
 
 /*# sourceMappingURL=style.css.map */

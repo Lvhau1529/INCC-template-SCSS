@@ -5790,6 +5790,17 @@ html {
   margin: 0;
   padding: 0; }
 
+.header .header-grid-12__logo a {
+  background-image: url(../../images/incc-logo.svg);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: contain; }
+.header .header-grid-12__nav .menu ul {
+  list-style-type: none !important;
+  display: none; }
+  .header .header-grid-12__nav .menu ul li a {
+    text-decoration: none; }
+
 /*End-Header*/
 .hero-banner .hero-banner-image {
   background-image: url(../../images/sample/image1.png);
@@ -5861,5 +5872,51 @@ html {
       .tiles .tiles-block .tiles-grid-12 .tiles-grid-6__right .content .button a:hover {
         color: #000;
         background-color: #f1f1f1; }
+
+/*End Tiles*/
+.tiles-1 .tiles-block .tiles-grid-12 {
+  background-image: url(../../images/sample/image4.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+  .tiles-1 .tiles-block .tiles-grid-12__content .button a {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1;
+    padding: 19px 33px 18px;
+    text-decoration: none;
+    background-color: #fff;
+    color: #000; }
+    .tiles-1 .tiles-block .tiles-grid-12__content .button a:hover {
+      color: #000;
+      background-color: #f1f1f1; }
+
+/*End Tiles-1*/
+.tiles-2 .tiles-block .tiles-grid-12 .tiles-grid-4:nth-child(1) {
+  background-image: url(../../images/sample/image5.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+.tiles-2 .tiles-block .tiles-grid-12 .tiles-grid-4:nth-child(2) {
+  background-image: url(../../images/sample/image6.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+.tiles-2 .tiles-block .tiles-grid-12 .tiles-grid-4:nth-child(3) {
+  background-image: url(../../images/sample/image7.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+.tiles-2 .tiles-block .tiles-grid-12 .tiles-grid-4__content .button a {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+  padding: 19px 33px 18px;
+  text-decoration: none;
+  background-color: #fff;
+  color: #000; }
+  .tiles-2 .tiles-block .tiles-grid-12 .tiles-grid-4__content .button a:hover {
+    color: #000;
+    background-color: #f1f1f1; }
 
 /*# sourceMappingURL=style.css.map */

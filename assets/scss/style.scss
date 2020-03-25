@@ -14,14 +14,16 @@
   }
 }
 
-html {
+* {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Helvetica",
     "Roboto", "Noto", "Ubuntu", sans-serif;
   font-size: 16px;
   box-sizing: border-box;
-  color: #000;
   margin: 0;
   padding: 0;
+  p {
+    font-size: 13px;
+  }
 }
 
 .header {
@@ -60,6 +62,7 @@ html {
       position: center center;
       size: cover;
     }
+    height: 279px;
     .hero-banner-paragraph {
       &__content {
         padding: 20px 10px 50px 10px;
@@ -90,8 +93,8 @@ html {
     .tiles-grid-12 {
       .tiles-grid-6 {
         padding: 0;
-
         &__left {
+          height: 264px;
           background: {
             image: url(../../images/sample/image2.png);
             repeat: no-repeat;
@@ -100,12 +103,18 @@ html {
           }
 
           .content {
+            padding: 40px 20px 0 20px;
+            color: #fff;
             h3 {
               margin: 0;
-              font-weight: 300;
-              font-size: 1.8em;
+              font-weight: 700;
+              font-size: 1.5em;
+            }
+            p {
+              padding: 20px 0 0 0;
             }
             .button {
+              padding-top: 25px;
               a {
                 @include button;
               }
@@ -114,6 +123,7 @@ html {
         }
 
         &__right {
+          height: 264px;
           background: {
             image: url(../../images/sample/image3.png);
             repeat: no-repeat;
@@ -121,12 +131,18 @@ html {
             size: cover;
           }
           .content {
+            padding: 40px 20px 0 20px;
+            color: #fff;
             h3 {
               margin: 0;
-              font-weight: 300;
-              font-size: 1.8em;
+              font-weight: 700;
+              font-size: 1.5em;
+            }
+            p {
+              padding: 20px 0 0 0;
             }
             .button {
+              padding-top: 25px;
               a {
                 @include button;
               }
@@ -142,6 +158,7 @@ html {
 .tiles-1 {
   .tiles-block {
     .tiles-grid-12 {
+      height: 279px;
       background: {
         image: url(../../images/sample/image4.png);
         repeat: no-repeat;
@@ -149,7 +166,13 @@ html {
         size: cover;
       }
       &__content {
+        padding: 30px 10px;
+        h2 {
+          font-size: 2em;
+          font-weight: 700;
+        }
         .button {
+          padding-top: 25px;
           a {
             @include button;
           }
@@ -165,7 +188,9 @@ html {
   .tiles-block {
     .tiles-grid-12 {
       .tiles-grid-4 {
+        height: 279px;
         &:nth-child(1) {
+          color: #fff;
           background: {
             image: url(../../images/sample/image5.png);
             repeat: no-repeat;
@@ -184,15 +209,26 @@ html {
         }
 
         &:nth-child(3) {
+          color: #fff;
           background: {
             image: url(../../images/sample/image7.png);
             repeat: no-repeat;
             position: center center;
             size: cover;
+            width: 100%;
+            max-width: 400px;
+            height: auto;
           }
         }
         &__content {
+          padding: 50px 20px 0 20px;
+
+          h4 {
+            font-size: 1.4em;
+            font-weight: 700;
+          }
           .button {
+            padding-top: 25px;
             a {
               @include button;
             }
@@ -203,4 +239,52 @@ html {
   }
 }
 
+@media only screen and (min-width: 900px) {
+  .hero-banner {
+    .hero-banner-image {
+      height: 754px;
+    }
+  }
+/*End Hero-banner*/
+
+.tiles {
+  .tiles-block {
+    .tiles-grid-12 {
+      .tiles-grid-6 {
+        &__left {
+          height: 635px;
+        }
+        &__right {
+          height: 635px;
+        }
+      }
+    }
+  }
+}
+
+/*End Tiles*/
+
+.tiles-1 {
+  .tiles-block {
+    .tiles-grid-12 {
+      height: 754px;
+    }
+  }
+}
+
+/*End Tiles*/
+
+.tiles-2 {
+  .tiles-block {
+    .tiles-grid-12 {
+      .tiles-grid-4 {
+        height: 400px;
+      }
+    }
+  }
+}
+
+
+
+}
 //@import "../vendors/bourbon/bourbon";

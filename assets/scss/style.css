@@ -5792,15 +5792,24 @@ button.close {
     font-size: 13px; }
 
 .header .header-grid-12__logo a {
-  background-image: url(../../images/incc-logo.svg);
-  background-position: left center;
-  background-repeat: no-repeat;
-  background-size: contain; }
-.header .header-grid-12__nav .menu ul {
-  list-style-type: none !important;
-  display: none; }
-  .header .header-grid-12__nav .menu ul li a {
-    text-decoration: none; }
+  background-image: url(../../images/incc-logo.png); }
+.header .header-grid-12__nav .menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 160px; }
+  .header .header-grid-12__nav .menu ul {
+    padding-right: 20px;
+    width: 100%;
+    list-style-type: none; }
+    .header .header-grid-12__nav .menu ul li {
+      padding-left: 4%;
+      display: inline; }
+      .header .header-grid-12__nav .menu ul li a {
+        text-decoration: none;
+        color: #000;
+        font-weight: 700;
+        font-size: 17px; }
 
 /*End-Header*/
 .hero-banner .hero-banner-image {
@@ -5960,6 +5969,10 @@ button.close {
           background-color: #f1f1f1; }
 
 @media only screen and (min-width: 900px) {
+  .header {
+    height: 160px; }
+
+  /*End Header*/
   .hero-banner .hero-banner-image {
     height: 754px; }
 

@@ -30,20 +30,27 @@
   .header-grid-12 {
     &__logo {
       a {
-        background-image: url(../../images/incc-logo.svg);
-        background-position: left center;
-        background-repeat: no-repeat;
-        background-size: contain;
+        background-image: url(../../images/incc-logo.png);
       }
     }
     &__nav {
       .menu {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 160px;
         ul {
-          list-style-type: none !important;
-          display: none;
+          padding-right: 20px;
+          width: 100%;
+          list-style-type: none;
           li {
+            padding-left: 4%;
+            display: inline;
             a {
               text-decoration: none;
+              color: #000;
+              font-weight: 700;
+              font-size: 17px;
             }
           }
         }
@@ -239,52 +246,55 @@
   }
 }
 
+//Laptop device
 @media only screen and (min-width: 900px) {
+  .header {
+    height: 160px;
+  }
+
+  /*End Header*/
   .hero-banner {
     .hero-banner-image {
       height: 754px;
     }
   }
-/*End Hero-banner*/
+  /*End Hero-banner*/
 
-.tiles {
-  .tiles-block {
-    .tiles-grid-12 {
-      .tiles-grid-6 {
-        &__left {
-          height: 635px;
-        }
-        &__right {
-          height: 635px;
+  .tiles {
+    .tiles-block {
+      .tiles-grid-12 {
+        .tiles-grid-6 {
+          &__left {
+            height: 635px;
+          }
+          &__right {
+            height: 635px;
+          }
         }
       }
     }
   }
-}
 
-/*End Tiles*/
+  /*End Tiles*/
 
-.tiles-1 {
-  .tiles-block {
-    .tiles-grid-12 {
-      height: 754px;
-    }
-  }
-}
-
-/*End Tiles*/
-
-.tiles-2 {
-  .tiles-block {
-    .tiles-grid-12 {
-      .tiles-grid-4 {
-        height: 400px;
+  .tiles-1 {
+    .tiles-block {
+      .tiles-grid-12 {
+        height: 754px;
       }
     }
   }
-}
 
+  /*End Tiles*/
 
-
+  .tiles-2 {
+    .tiles-block {
+      .tiles-grid-12 {
+        .tiles-grid-4 {
+          height: 400px;
+        }
+      }
+    }
+  }
 }
 //@import "../vendors/bourbon/bourbon";
